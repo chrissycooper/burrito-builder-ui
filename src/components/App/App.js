@@ -19,14 +19,14 @@ class App extends Component {
   componentDidMount() {
     getOrders()
     .then(data => {
-      console.log(data.orders)
+      // console.log(data.orders)
       this.setState({orders: data.orders})
     })
       .catch(err => console.error('Error fetching:', err));
   }
 
   render() {
-    console.log(this.state.orders)
+    // console.log(this.state.orders)
     return (
       <main className="App">
         <header>
