@@ -1,4 +1,4 @@
-//2: As a user, I should be able to enter information into the order form and see my ingredient selections update. If I do not fill out the form correctly, I should see an error message, and my order should not be accepted
+//User Flow 2: As a user, I should be able to enter information into the order form and see my ingredient selections update. If I do not fill out the form correctly, I should see an error message, and my order should not be accepted
 
 describe('user flow 2', () => {
   beforeEach(() => {

@@ -1,4 +1,4 @@
-//3: As a user, if my order was successfully submitted, I should see in the list of orders. 
+//User Flow 3: As a user, if my order was successfully submitted, I should see in the list of orders. 
 
 describe('user flow 3', () => {
   beforeEach(() => {

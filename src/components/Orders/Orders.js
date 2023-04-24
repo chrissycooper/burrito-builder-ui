@@ -2,7 +2,6 @@ import React from 'react';
 import './Orders.css';
 
 const Orders = props => {
-  // console.log('orders in orders', props.orders)
   const orderEls = props.orders.map((order, index) => {
     return (
       <div className="order" key={order.name + index}>
