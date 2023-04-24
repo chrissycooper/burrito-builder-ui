@@ -16,6 +16,7 @@ describe('user flow 2', () => {
 
     cy.get('input').type('SpiderMan').should('have.value', 'SpiderMan')
   })
+  
   it('should be able to choose ingredients in the form', () => {
     cy.get('p').contains('Order: Nothing selected')
 
