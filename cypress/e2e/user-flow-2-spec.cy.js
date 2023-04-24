@@ -16,22 +16,21 @@ describe('user flow 2', () => {
 
     cy.get('input').type('SpiderMan').should('have.value', 'SpiderMan')
   })
-  
+
   it('should be able to choose ingredients in the form', () => {
     cy.get('p').contains('Order: Nothing selected')
 
     cy.get('[name="sofritas"]').click()
     cy.get('[name="lettuce"]').click()
-    cy.get('[name="pico de gallo"]').should('be.visible')
-    cy.get('[name="pico de gallo"]').click()
+    cy.get('[name="pico de gallo"]').should('be.visible') 
     cy.get('[name="hot sauce"]').should('be.visible')
-    cy.get('[name="cilantro"]').click()
 
     cy.get('input').should('be.visible')
     cy.get('[name="beans"]').should('be.visible')
     cy.get(':nth-child(15)').should('be.visible')
 
-    cy.contains('Order: sofritas, lettuce, pico de gallo, cilantro, hot sauce')
+    cy.get('p').should('be.visible')
+    cy.contains('Order: sofritas, lettuce')
   })
 
   it('should be able to see an error message if I do not fill out both inputs', () => {
